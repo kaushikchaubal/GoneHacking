@@ -2,7 +2,7 @@
 
 console.log('app.js');
 
-angular.module('GoInvestApp', ['firebase', 'ngRoute'])
+angular.module('GoInvestApp', ['firebase', 'ngRoute', 'highcharts-ng'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
