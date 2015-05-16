@@ -6,8 +6,13 @@ angular.module('GoInvestApp')
 		console.log('TestCtrl');
 
 	  var ref = new Firebase("https://gonehacking-goinvest.firebaseio.com/test");
+	  var realRef = new Firebase("https://gonehacking-goinvest.firebaseio.com/query/results/quote")
 
 	  $scope.messages = $firebaseArray(ref);
+
+	  $scope.realList = $firebaseArray(realRef);
+
+	  console.log($scope.realList);
 
 		$scope.addMessage = function() {
 	    $scope.messages.$add({
