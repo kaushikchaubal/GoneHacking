@@ -35,6 +35,7 @@ angular.module('GoInvestApp', ['firebase', 'ngRoute'])
       })
       .when('/test', {
         templateUrl: 'app/test/test.html',
+        controller: 'TestCtrl'
       })
       .otherwise({
         redirectTo: '/'
