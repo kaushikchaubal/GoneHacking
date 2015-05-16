@@ -1,0 +1,47 @@
+[
+	{
+		"id": 1,
+		"username": "",
+		"real_name": "",
+		"avatar_url": "",
+		"bio": "",
+		"risk": 3,
+		"portfolios": [ 1 ]
+	},
+	{
+		"id": 2,
+		"username": "",
+		"real_name": "",
+		"avatar_url": "",
+		"bio": "",
+		"risk": 3,
+		"portfolios": [ 1 ]
+	},
+	{
+		"id": 3,
+		"username": "",
+		"real_name": "",
+		"avatar_url": "",
+		"bio": "",
+		"risk": 3,
+		"portfolios": [ 1 ]
+	},
+	{
+		"id": 3,
+		"username": "",
+		"real_name": "",
+		"avatar_url": "",
+		"bio": "",
+		"risk": 3,
+		"portfolios": [ 1 ]
+	},
+	{
+		"id": 5,
+		"username": "",
+		"real_name": "",
+		"avatar_url": "",
+		"bio": "",
+		"risk": 3,
+		"portfolios": [ 1 ]
+	}
+]

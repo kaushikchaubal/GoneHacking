@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"username": "",
+		"forked_from": "",
+		"assets": [
+			{
+				"symbol": "",
+				"quantity": 123,
+				"value": 12.34,
+				"currency": "USD",
+				"sector": ""
+			},
+			{
+				"symbol": "",
+				"quantity": 123,
+				"value": 12.34,
+				"currency": "USD",
+				"sector": ""
+			},
+			{
+				"symbol": "",
+				"quantity": 123,
+				"value": 12.34,
+				"currency": "USD",
+				"sector": ""
+			}
+		]
+	}
+]
