@@ -33,6 +33,10 @@ angular.module('GoInvestApp', ['firebase', 'ngRoute'])
         templateUrl: 'app/clone/index.html',
         controller: 'CloneCtrl'
       })
+      .when('/admin', {
+        templateUrl: 'app/admin/index.html',
+        controller: 'AdminCtrl'
+      })
       .when('/test', {
         templateUrl: 'app/test/test.html',
         controller: 'TestCtrl'

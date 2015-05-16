@@ -1,6 +1,15 @@
+<h2>Array</h2>
 <div>
 	<input type="text" ng-model="newMessageText" /> <button class="btn" ng-click="addMessage()">Add</button>
 </div>
 <ul>
-	<li ng-repeat="message in messages">{{message.text}}</li>
+	<li ng-repeat="message in messages">{{message.text}} <button class="btn btn-tiny danger" ng-click="messages.$remove(message)">X</button></li>
 </ul>
+
+<h2>Object</h2>
+<div>
+	Name: <input type="text" ng-model="objectData.name" /><br />
+	Company: <input type="text" ng-model="objectData.company" /><br />
+	<button class="btn btn-primary" ng-click="objectData.$save()">Save</button>
+	<div>Name: {{objectData.name}}, Company: {{objectData.company}}</div>
+</div>

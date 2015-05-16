@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('GoInvestApp')
-	.controller('TestCtrl', function ($http, $scope, $firebaseArray) {
+	.controller('TestCtrl', function ($http, $scope, $firebaseArray, $firebaseObject) {
 
 		console.log('TestCtrl');
 
@@ -15,5 +15,9 @@ angular.module('GoInvestApp')
 	    });
 	    $scope.newMessageText = '';
 	  };
+
+		var ref1 = new Firebase("https://gonehacking-goinvest.firebaseio.com/test1/username1");
+
+		$scope.objectData = $firebaseObject(ref1);
 
 	})
