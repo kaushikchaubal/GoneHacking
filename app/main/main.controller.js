@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('GoInvestApp')
-	.controller('MainCtrl', function ($http, $scope) {
+	.controller('MainCtrl', function ($http, $scope, $firebaseObject) {
 	  var ref = new Firebase("https://gonehacking-goinvestx.firebaseio.com/");
 
 	  // download the data into a local object
