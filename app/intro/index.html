@@ -1,5 +1,26 @@
 <div ng-include="'app/components/header.html'"></div>
 
-[intro]
+<div class="page container">
+    <div class="intro-page">
+        <h2>
+        	Risk Profile
+        	<br><small>How would you classify your risk profile?</small>
+        </h2>
+        <br />
+        <input type="range" minimum="1" maximum="10" class="slider" />
+		<div class="row">
+			<div class="col-sm-6 text-left">Low Risk</div>
+			<div class="col-sm-6 text-right">High Risk</div>
+		</div>
+
+		<hr />
+
+        <h2>How do you want to start?</h2>
+        <div class="text-center how-start">
+	        <p><a href="#/explore" class="btn btn-lg btn-success"><i class="fa fa-globe"></i> Explore</a></p>
+	        <p><a href="#/diy" class="btn btn-lg btn-primary"><i class="fa fa-cog"></i> Do-It-Yourself</a></p>
+        </div>
+    </div>
+</div>
 
 <div ng-include="'app/components/footer.html'"></div>
