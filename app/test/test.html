@@ -1,1 +1,23 @@
-test
+<h2>Array</h2>
+<div>
+	<input type="text" ng-model="newMessageText" /> <button class="btn" ng-click="addMessage()">Add</button>
+</div>
+<ul>
+	<li ng-repeat="message in messages">{{message.text}} <button class="btn btn-tiny danger" ng-click="messages.$remove(message)">X</button></li>
+</ul>
+
+<h2>data</h2>
+<ul>
+	<li ng-repeat="item in realList">{{item.Symbol}}: {{item.Date}} | {{item.High}} | {{item.Low}} | {{item.Open}} | {{item.Close}} | {{item.Volume}}</li>
+</ul>
+
+<h2>Object</h2>
+<div>
+	Name: <input type="text" ng-model="objectData.name" /><br />
+	Company: <input type="text" ng-model="objectData.company" /><br />
+	<button class="btn btn-primary" ng-click="objectData.$save()">Save</button>
+	<div>Name: {{objectData.name}}, Company: {{objectData.company}}</div>
+</div>
+
+<h2>HighChart</h2>
+<highchart id="chart1" config="chartConfig" class="span9" ></highchart>

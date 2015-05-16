@@ -2,7 +2,7 @@
 
 console.log('app.js');
 
-angular.module('GoInvestApp', ['firebase', 'ngRoute'])
+angular.module('GoInvestApp', ['firebase', 'ngRoute', 'highcharts-ng'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -33,8 +33,13 @@ angular.module('GoInvestApp', ['firebase', 'ngRoute'])
         templateUrl: 'app/clone/index.html',
         controller: 'CloneCtrl'
       })
+      .when('/admin', {
+        templateUrl: 'app/admin/index.html',
+        controller: 'AdminCtrl'
+      })
       .when('/test', {
         templateUrl: 'app/test/test.html',
+        controller: 'TestCtrl'
       })
       .otherwise({
         redirectTo: '/'
