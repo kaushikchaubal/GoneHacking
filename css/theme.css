@@ -11,11 +11,18 @@ body > div[ng-view] {
     padding-top: 60px;
 }
 
+.navbar {
+    min-height: 60px;
+    background: rgba(255,255,255,0.9);
+}
+.navbar-brand {
+    height: 60px;
+}
 .logo {
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: auto 100%;
-    width: 100px;
+    width: 200px;
     height: 100%;
 }
 
@@ -78,4 +85,40 @@ input[type=range].slider:focus::-webkit-slider-runnable-track {
     font-family: Lato;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+
+.portfolio {
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.portfolio .name {
+    font-weight: bold;
+    font-family: Lato;
+    font-size: 16px;
+}
+
+.search {
+    margin-bottom: 10px;
+    position: relative;
+}
+.search .fa {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+.search input {
+    border-radius: 50px;
+    width: 100%;
+    font-size: 14px;
+    outline: 0;
+    padding: 10px 35px 10px 20px;
+    border: 1px solid #eee;
 }
