@@ -140,8 +140,9 @@ input[type=range].slider:focus::-webkit-slider-runnable-track {
     text-align: right;
 }
 .portfolios-added .asset {
-    background-color: #CCECB4;
-  border-color: #9FCB7E;
+    background-color: #BBEDC1;
+    border-color: #9BD1A1;
+}
 
 /* DIY */
 .search {

@@ -21,9 +21,9 @@ angular.module('GoInvestApp', ['firebase', 'ngRoute', 'highcharts-ng'])
         templateUrl: 'app/diy/index.html',
         controller: 'DiyCtrl'
       })
-      .when('/league', {
-        templateUrl: 'app/league/index.html',
-        controller: 'LeagueCtrl'
+      .when('/execute', {
+        templateUrl: 'app/execute/index.html',
+        controller: 'ExecuteCtrl'
       })
       .when('/portfolio', {
         templateUrl: 'app/portfolio/index.html',
