@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('GoInvestApp')
-	.controller('ProfileCtrl', function ($http, $scope, $firebaseObject) {
+	.controller('UserCtrl', function ($http, $scope, $firebaseObject) {
 
 	var ref = new Firebase("https://gonehacking-goinvest.firebaseio.com/");
 
@@ -1998,5 +1998,4 @@ angular.module('GoInvestApp')
 					},
 					useHighStocks: true
 			};
-
 		});
