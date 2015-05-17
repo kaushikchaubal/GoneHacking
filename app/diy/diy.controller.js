@@ -5,12 +5,29 @@ angular.module('GoInvestApp')
 
 		console.log('DiyCtrl');
 
-	  var ref = new Firebase("https://gonehacking-goinvest.firebaseio.com/");
+		$scope.asset_search = "";
 
-	  // download the data into a local object
-	  var syncObject = $firebaseObject(ref);
+		$scope.assets = [{
+			'name': "AAPL - Apple Inc.",
+			'sector': "Technology"
+		},
+		{
+			'name': "GOOG - Google Inc",
+			'sector': "Technology"
+		},
+		{
+			'name': "BLK - BlackRock, Inc.",
+			'sector': "Finance"
+		},
+		{
+			'name': "VOD - Vodafone Group plc",
+			'sector': "Telecommunications"
+		},
+		{
+			'name': "GSK - GlaxoSmithKline plc",
+			'sector': "Healthcare"
+		},
 
-	  // putting a console.log here won't work, see below
-	  syncObject.$bindTo($scope, "data");
+		];
 
 	})

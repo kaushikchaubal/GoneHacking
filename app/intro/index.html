@@ -1,8 +1,7 @@
 <div ng-include="'app/components/header.html'"></div>
 
 <div class="page container">
-    <div class="intro-page">
-        <h2>
+        <h2 style="margin-top: 0">
         	Risk Profile
         	<br><small>How would you classify your risk profile?</small>
         </h2>
@@ -17,14 +16,17 @@
             <a href="#">I don't know, help me out!</a>
         </p>
 
+        <div class="chart">
+            
+        </div>
+
 		<hr />
 
-        <h2>How do you want to start?</h2>
+        <h2>Portfolio Builder</h2>
         <div class="text-center how-start">
-	        <p><a href="#/explore" class="btn btn-lg btn-success"><i class="fa fa-globe"></i> Explore</a></p>
-	        <p><a href="#/diy" class="btn btn-lg btn-primary"><i class="fa fa-cog"></i> Do-It-Yourself</a></p>
+	        <p><a href="#/diy" class="btn btn-lg btn-primary"><i class="fa fa-plus"></i>&nbsp; Create New</a></p>
+            <p><a href="#/explore" class="btn btn-lg btn-success"><i class="fa fa-globe"></i>&nbsp; Explore Existing</a></p>
         </div>
-    </div>
 </div>
 
 <div ng-include="'app/components/footer.html'"></div>

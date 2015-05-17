@@ -1,23 +1,21 @@
 <div ng-include="'app/components/header.html'"></div>
 
 <div class="page container">
-	<h1>Build your own</h1>
-	<hr />
 
 	<div class="search">
 		<i class="fa fa-search"></i>
-		<input type="text">
+		<input type="text"  ng-model="asset_search">
 	</div>
 
-
 	<div class="portfolios">
-		<div class="portfolio row">
-			<div class="name col-xs-4">Dhilip Buddha</div>
-			<div class="chart col-xs-6">
-				<div class="mini-chart btn btn-default"></div>
+		<div class="portfolio asset row" ng-repeat="asset in assets|filter:asset_search">
+			<div class="name col-xs-9">
+				<a href="#/asset" class="portfolio-name">{{asset.name}}</a>
+				<br />
+				<a href="#/sector" class="user-name">{{asset.sector}}</a>
 			</div>
-			<div class="actions col-xs-2 text-right">
-				<div class="btn btn-default"><i class="fa fa-code-fork"></i></div>
+			<div class="actions col-xs-3">
+				<div class="btn btn-default"><i class="fa fa-plus"></i></div>
 			</div>
 		</div>
 	</div>
