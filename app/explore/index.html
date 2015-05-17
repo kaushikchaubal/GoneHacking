@@ -15,7 +15,10 @@
 					{{port.return}}%
 			</div>
 			<div class="actions col-xs-3">
-				<div class="btn btn-default"><i class="fa fa-files-o"></i></div>
+				<div class="btn btn-default" ng-click="port.selected = true"><i class="fa fa-files-o"></i></div>
+			</div>
+			<div class="selection" style="text-align:right" ng-show="port.selected">
+				<input type="text" placeholder="amount" /> <button class="btn" ng-click="port.selected = false">Go</button>
 			</div>
 		</div>
 
