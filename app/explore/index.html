@@ -1,3 +1,15 @@
+<style>
+	.sub-title {
+		margin: 20px 0;
+		font-size: 1.9m;
+		font-weight: bold;
+	}
+	.avatar-wrapper {
+		background-color: #EDEDED;
+		padding: 10px;
+		text-align: center;
+	}
+</style>
 <div ng-include="'app/components/header.html'"></div>
 
 <div class="page container">
@@ -5,17 +17,65 @@
 	<h1>Explore</h1>
 	<hr />
 
-	<div class="portfolios">
-		<div class="portfolio row">
-			<div class="name col-xs-4">Dhilip Buddha</div>
-			<div class="chart col-xs-6">
-				<div class="mini-chart btn btn-default"></div>
+
+		<div class="row">
+
+			<div class="col-md-3">
+
+					<div class="avatar-wrapper">
+
+					<img src="images/tmp/avatar-head.jpg" style="max-width: 100%; margin: 5px auto;" />
+
+					<h3>Neil Woodford</h3>
+
+					</div>
+
 			</div>
-			<div class="actions col-xs-2 text-right">
+
+			<div class="col-md-9">
+
+				<h3>CF Woodford Equity Income</h3>
+
+				<!-- begin composition -->
+
+				<div class="sub-title">Composition</div>
+				<ul class="nav nav-tabs">
+					<li ng-class="{active: activeTab == 1 || !activeTab}"><a ng-click="activeTab = 1">Assets</a></li>
+					<li ng-class="{active: activeTab == 2}"><a ng-click="activeTab = 2">Currency</a></li>
+					<li ng-class="{active: activeTab == 3}"><a ng-click="activeTab = 3">Sector</a></li>
+				</ul>
+
+				<div class="tab-section" ng-show="activeTab == 1 || !activeTab" ng-hide="activeTab && activeTab != 1">
+						<highchart id="chart1" config="chartConfigAssets"></highchart>
+				</div>
+
+				<div class="tab-section" ng-show="activeTab == 2" ng-hide="!activeTab || actieTab != 2">
+						<highchart id="chart2" config="chartConfigCurrency"></highchart>
+				</div>
+				<div class="tab-section" ng-show="activeTab == 3"  ng-hide="!activeTab || actieTab != 2">
+						<highchart id="chart3" config="chartConfigSector"></highchart>
+				</div>
+
+				<!-- end composition -->
+
+				<hr />
+
+				<!-- begin performance -->
+
+				<div class="sub-title">Performance</div>
+
+				<highchart id="stockchart1" config="chartConfigPerformance1Y"></highchart>
+
+				<!-- end performance -->
+
+			</div>
+
+<!--       <div class="actions col-xs-2 text-right">
 				<div class="btn btn-default"><i class="fa fa-code-fork"></i></div>
-			</div>
+
+			</div> -->
 		</div>
-	</div>
+
 
 </div>
 
