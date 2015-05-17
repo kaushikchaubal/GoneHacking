@@ -6,23 +6,28 @@ angular.module('GoInvestApp')
 		console.log('ExploreCtrl');
 
 		$scope.portfolios = [{
-			'name': 'Portfolio Name 1',
-			'user': 'User name',
+			'name': 'JPM Japan C GBP Hdg Net Acc',
+			'user': 'Neil Woodford',
 			'return': 2.45,
 		},
 		{
-			'name': 'Portfolio Name 2',
-			'user': 'User name',
+			'name': 'Old Mutual UK Mid Cap R Acc',
+			'user': 'Sheldon Cooper',
 			'return': -1.02,
 		},
 		{
-			'name': 'Portfolio Name 3',
-			'user': 'User name',
+			'name': 'Schroder European Alpha Plus Inc',
+			'user': 'Joey Tribbiani',
 			'return': 2.45,
 		},
 		{
-			'name': 'Portfolio Name 4',
-			'user': 'User name',
+			'name': 'Baillie Gifford Global Discovery Inc',
+			'user': 'Ross Geller',
+			'return': 2.45,
+		},
+		{
+			'name': 'Baillie Gifford Global Discovery Inc',
+			'user': 'Leonard Hofstader',
 			'return': 2.45,
 		},
 		]

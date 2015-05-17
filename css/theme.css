@@ -102,12 +102,12 @@ input[type=range].slider:focus::-webkit-slider-runnable-track {
     margin: 0 0 10px 0;
     display: block;
     position: relative;
-    height: 65px;
+    min-height: 65px;
 }
 .portfolio > div {
     padding: 10px;
     padding-bottom: 10px;
-    height: 65px;
+    min-height: 65px;
 }
 .portfolio .name {
     font-weight: bold;
