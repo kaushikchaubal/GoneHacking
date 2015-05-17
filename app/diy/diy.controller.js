@@ -7,6 +7,8 @@ angular.module('GoInvestApp')
 
 		$scope.asset_search = "";
 
+		$scope.assets_added = [];
+
 		$scope.assets = [{
 			'name': "AAPL - Apple Inc.",
 			'sector': "Technology"
@@ -16,8 +18,8 @@ angular.module('GoInvestApp')
 			'sector': "Technology"
 		},
 		{
-			'name': "BLK - BlackRock, Inc.",
-			'sector': "Finance"
+			'name': "SDRC - Schroders plc",
+			'sector': "Financials"
 		},
 		{
 			'name': "VOD - Vodafone Group plc",
@@ -29,5 +31,24 @@ angular.module('GoInvestApp')
 		},
 
 		];
+
+		$scope.addAsset = function(asset) {
+			for (var a in $scope.assets) {
+				if ($scope.assets[a] == asset) {
+					$scope.assets.splice(a, 1);
+					$scope.assets_added.push(asset);
+					$scope.apply();
+				}
+			}
+ 		};
+ 		$scope.removeAsset = function(asset) {
+			for (var a in $scope.assets_added) {
+				if ($scope.assets_added[a] == asset) {
+					$scope.assets_added.splice(a, 1);
+					$scope.assets.push(asset);
+					$scope.apply();
+				}
+			}
+ 		}
 
 	})

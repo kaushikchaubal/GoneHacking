@@ -136,8 +136,11 @@ input[type=range].slider:focus::-webkit-slider-runnable-track {
 }
 .portfolio .actions {
     padding: 16px 10px;
-    
     text-align: right;
+}
+.portfolios-added .asset {
+    background-color: #FFD6C9;
+    border-color: #F2A58D;
 }
 
 /* DIY */
@@ -160,3 +163,4 @@ input[type=range].slider:focus::-webkit-slider-runnable-track {
     padding: 10px 35px 10px 20px;
     border: 1px solid #eee;
 }
+
