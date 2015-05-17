@@ -15,6 +15,7 @@ h2 small {
 
 .page {
     padding-top: 80px;
+    margin-bottom: 50px;
 }
 
 .navbar {
@@ -136,7 +137,7 @@ input[type=range].slider:focus::-webkit-slider-runnable-track {
 }
 .portfolio .actions {
     padding: 16px 10px;
-    
+
     text-align: right;
 }
 
